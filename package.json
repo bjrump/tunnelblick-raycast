@@ -1,7 +1,7 @@
 {
   "name": "tunnelblick-toggle",
   "title": "Tunnelblick Toggle",
-  "author": "bjrump",
+  "author": "benedikt_rump",
   "description": "Toggles the first available Tunnelblick VPN connection",
   "icon": "command-icon.png",
   "categories": [
