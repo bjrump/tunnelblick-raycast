@@ -2,6 +2,8 @@
 
 This Raycast extension allows you to quickly connect and disconnect your Tunnelblick VPN configurations directly from Raycast.
 
+[View on GitHub](https://github.com/bjrump/tunnelblick-raycast)
+
 ## Features
 
 - **Smart Toggling**: Automatically detects your available VPN configuration.
@@ -12,17 +14,11 @@ This Raycast extension allows you to quickly connect and disconnect your Tunnelb
 ## How it Works
 
 The extension uses AppleScript to communicate with the Tunnelblick application. It:
+
 1.  Retrieves the list of available configurations.
-2.  Identifies the first valid configuration name.
+2.  Parses the list to find the first valid configuration name.
 3.  Checks its current state (Connected/Disconnected).
 4.  Toggles it accordingly.
-
-## Installation
-
-1.  Clone this repository.
-2.  Run `npm install`.
-3.  Run `npm run dev` to start the development server.
-4.  Open Raycast and search for "Toggle VPN".
 
 ## Requirements
 

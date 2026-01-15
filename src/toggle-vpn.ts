@@ -4,7 +4,7 @@ import { runAppleScript } from "run-applescript";
 export default async function Command() {
   try {
     const configsOutput = await runAppleScript(
-      'tell application "Tunnelblick" to get configurations'
+      'tell application "Tunnelblick" to get configurations',
     );
 
     if (!configsOutput || configsOutput.trim() === "") {
@@ -13,9 +13,9 @@ export default async function Command() {
     }
 
     const firstConfig = configsOutput.split(",")[0];
-    
+
     let configName = firstConfig.replace("configuration ", "").trim();
-    
+
     if (configName.startsWith('"') && configName.endsWith('"')) {
       configName = configName.slice(1, -1);
     }
